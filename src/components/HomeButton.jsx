@@ -1,9 +1,9 @@
 import { Text, StyleSheet, TouchableHighlight } from 'react-native'
 import React from 'react'
 
-const HomeButton = () => {
+const HomeButton = ({navigation}) => {
   return (
-    <TouchableHighlight style={styles.button} onPress={()=>{console.log('hi')}}>
+    <TouchableHighlight style={styles.button} onPress={()=>{navigation.navigate('Calculator')}}>
       <Text style={styles.buttonText}>Let's Start</Text>
     </TouchableHighlight>
   )

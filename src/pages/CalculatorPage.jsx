@@ -14,7 +14,7 @@ const CalculatorPage = () => {
   const [noTeeth, setNoTeeth] = useState();
   const [module, setModule] = useState();
   const [circularPitch, setCircularPitch] = useState();
-  const [pitchCircularDiameter, setPitchCircularDiameter] = useState();
+  const [pitchCircleDiameter, setPitchCircleDiameter] = useState();
   const [addendum, setAddendum] = useState();
   const [dedendum, setDedendum] = useState();
   const [outerDiameter, setOuterDiameter] = useState();
@@ -42,7 +42,7 @@ const CalculatorPage = () => {
                 noTeeth,
                 module,
                 setCircularPitch,
-                setPitchCircularDiameter,
+                setPitchCircleDiameter,
                 setAddendum,
                 setDedendum,
                 setOuterDiameter,
@@ -64,8 +64,8 @@ const CalculatorPage = () => {
           value={circularPitch}
         />
         <CustomOutput
-          descriptionText={"Pitch circular diameter:"}
-          value={pitchCircularDiameter}
+          descriptionText={"Pitch circle diameter:"}
+          value={pitchCircleDiameter}
         />
         <CustomOutput descriptionText={"Addendum:"} value={addendum} />
         <CustomOutput descriptionText={"Dedendum:"} value={dedendum} />
@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-between",
     alignItems: "center",
-    // backgroundColor: 'red',
   },
   inputFieldBackground: {
     backgroundColor: "rgba(0,0,0,0.7)",
@@ -96,7 +95,6 @@ const styles = StyleSheet.create({
     borderRadius: 40,
   },
   outputFieldHeading: {
-    // backgroundColor: "yellow",
     width: "80%",
     paddingHorizontal: "5%",
   },
@@ -120,32 +118,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: "2%",
-  },
-  buttonText: {
-    fontSize: 22,
-  },
-  outputFieldHeadingText: {
-    fontSize: 22,
-  },
-  insideText: {
-    fontSize: 18,
-  },
-  input: {
-    height: 40,
-    padding: 10,
-    width: "50%",
-    color: "white",
-    backgroundColor: "white",
-    borderRadius: 40,
-    marginHorizontal: "5%",
-  },
-  inputComponent: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  outputFieldOutput: {
-    flexDirection: "row",
-    justifyContent: "space-between",
   },
 });
 

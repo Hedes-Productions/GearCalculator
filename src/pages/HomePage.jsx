@@ -2,12 +2,12 @@ import { View, Text, StyleSheet} from "react-native";
 import React from "react";
 import HomeButton from "../components/HomeButton";
 
-const HomePage = () => (
+const HomePage = ({navigation}) => (
   <View style={styles.container}>
     <View style={styles.headingPosition}>
       <Text style={styles.headingText}>Gear Calculator</Text>
     </View>
-    <HomeButton />
+    <HomeButton navigation={navigation}/>
   </View>
 );
 
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 48,
     fontWeight: "bold",
+    textAlign: 'center',
   },
 });
 

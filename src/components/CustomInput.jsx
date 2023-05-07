@@ -20,9 +20,8 @@ const styles = StyleSheet.create({
     height: 40,
     padding: 10,
     color: "black",
-    backgroundColor: "white",
+    backgroundColor: "rgba(255,255,255,0.5)",
     borderRadius: 40,
-    marginHorizontal: "5%",
   },
   inputComponent: {
     flexDirection: "row",
